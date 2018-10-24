@@ -41,15 +41,31 @@ public class Pawn implements ChessPiece{
 		
 		System.out.println(" ");
 		if (count > 0) {
-		System.out.println("Select the position number ( 0 - " + (count-1) + " ) you want the rook to move to ");
+		System.out.println("Select the position number ( 0 - " + (count-1) + " ) you want the pawn to move to ");
 		}
 		else {
 			System.out.println("Pawn is blocked, it cannot be moved");
 		}
+		int x;
+		while (true) {
 		Scanner s = new Scanner(System.in);
-		int x = s.nextInt();
+		try {
+		x = s.nextInt();
+		}
+		catch(Exception e) {
+			System.out.println("Enter a valid position number ( 0 - " + (count-1) + " )");
+			continue;
+		}
+		if (x > count-1) {
+			System.out.println("Enter a valid position number ( 0 - " + (count-1) + " )");
+			continue;
+		}
+		else {
+		break;
+			
+		}
+		}
 		return al.get(x);
-		 
 	}
 
 }

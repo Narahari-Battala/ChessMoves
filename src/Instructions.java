@@ -8,7 +8,7 @@ public class Instructions {
 		System.out.println("The chess board in the program is assumed to be named as follows");
 		
 		System.out.println(" ");
-		System.out.println("All the 8 rows are named using numbers [1-8]");
+		System.out.println("All the 8 rows are named using numbers [1-8] ");
 		System.out.println(" ");
 		System.out.println("All the 8 columns are named using albhabets [a-h]");
 		System.out.println(" ");
